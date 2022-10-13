@@ -1,0 +1,21 @@
+.inscripcion {
+    background: rgb(226, 106, 44);
+    background: linear-gradient(180deg, rgb(226, 106, 44) 5%, rgb(255, 130, 67) 17%, rgb(253, 166, 93) 30%, rgb(255, 208, 127) 70%, rgb(255, 130, 67) 85%, rgb(226, 106, 44) 95%);
+    color: white;
+    padding: 12vh 0 30vh 0;
+}
+
+.inscripcion h1 {
+    font-weight: 700;
+    padding: 5vh;
+}
+
+
+
+.requisitos {
+    padding: 2vh;
+}
+
+.butt-ins {
+        padding-top: 5vh;
+    }

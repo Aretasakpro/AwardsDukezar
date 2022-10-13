@@ -1,0 +1,318 @@
+/** 
+Colores:
+COLOR 1: #E26A2C
+COLOR 2: #FF8243
+COLOR 3: #FDA65D
+COLOR 4: #FFD07F
+
+**/
+
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: sticky;
+}
+
+.duke {
+    font-weight: 700;
+    font-size: 2.5vh;
+}
+
+.navbarcolor {
+    background-color: #E26A2C;
+}
+
+.nav-item a {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+.nav-item a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .6s;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+    background: white;
+}
+
+.navbar-toggler-icon {
+    color: white;
+    background-image: none;
+}
+
+/** HEADER **/
+
+.inicio-small {
+    background: rgb(226, 106, 44);
+    background: linear-gradient(180deg, rgb(226, 106, 44) 0%, rgb(255, 130, 67) 20%, rgb(253, 166, 93) 62%);
+    height: 75vh;
+    color: white;
+}
+
+
+
+.inicio-small h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 10vh;
+}
+
+.inicio-small h1:nth-child(2) {
+    font-size: 7vh;
+}
+
+/** CONCURSO **/
+
+.concurso {
+    color: white;
+    margin-top: -2px;
+    background: rgb(253, 166, 93);
+    background: linear-gradient(180deg, rgb(253, 166, 93) 10%, rgb(255, 208, 127) 90%);
+}
+
+.pad-concurso {
+    padding: 5vh;
+}
+
+.img-concurso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    
+}
+
+.informacion-concurso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.informacion-concurso h1 {
+    font-size: 4.5vh;
+    font-weight: 700;
+    padding: 3vh 0;
+}
+
+
+
+.informacion-concurso p {
+    font-size: 2.5vh;
+}
+
+/* JURADO */
+
+.peluqueros {
+    background: rgb(255, 208, 127);
+    background: linear-gradient(0deg, rgb(253, 166, 93) 10%, rgb(255, 208, 127) 90%);
+    padding: 15vh 0 15vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1vh;
+}
+
+.peluquero {
+    padding: 1vh;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    padding: 2vh;
+}
+
+.titulo h1 {
+    font-size: 6vh;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.p-card {
+    padding-top: 2vh;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.carousel-caption h3{
+    font-weight: 600;
+    font-size: 5vh;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.org-card {
+    padding-bottom: 4vh;
+}
+
+/** PATROCINADORES **/
+
+.patrocinadores {
+    background: rgb(253, 166, 93);
+    background: linear-gradient(180deg, rgb(253, 166, 93) 30%, rgb(255, 130, 67) 62%, rgb(226, 106, 44) 92%);
+    margin-top: -1vh;
+    text-align: center;
+    color: white;
+}
+
+.titulo-patro {
+    padding-bottom: 20px;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 10));
+              transform: translateX(calc(-250px * 10));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 10));
+              transform: translateX(calc(-250px * 10));
+    }
+  }
+  .slider {
+    background: white;
+    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 98%;
+  }
+
+  .slider::before, .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 30s linear infinite;
+            animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 6);
+  }
+  
+  .slider .slide {
+    height: 80px;
+    width: 250px;
+  }
+  
+  .slide img{
+    object-fit: cover;
+  }
+
+  .gal-patrocinadores {
+    padding: 5vh;
+  }
+
+  .gal-patrocinadores img{
+    width: 100%;
+    height: 25vh;
+    padding: 2vh;
+  }
+
+.card-body h4 {
+    color: black;
+}
+
+.boton-card {
+    padding: 2vh 0 2vh 0;
+}
+
+
+
+/** FOOTER **/
+
+.footer {
+    background-color: rgb(226, 106, 44);
+    margin-top: -4px;
+    text-align: center;
+    padding: 10vh 0 5vh 0;
+    color: white;
+}
+
+.foot-text {
+    padding-bottom: 3vh;
+}
+
+.linea {
+    border-top: 2px solid white;
+    max-width: 75%;
+    margin: auto;
+    padding: 2vh;
+  }
+
+.footer-aa {
+    color: white;
+    padding-top: 30px;
+}
+
+.copyright {
+    color: white;
+    padding-top: 4vh;
+}
+
+/* BOTON */
+.button-color {
+    background: #E26A2C;
+    padding: 2vh 4vh;
+    border-radius: 5px;
+    color: white;
+    font-size: 2.5vh;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid white;
+
+    }
+
+
+ .button-color:hover {
+    background: rgb(196, 66, 6);
+    color: white;
+    border: 0.5px solid white;
+    }
+
+    

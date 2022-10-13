@@ -1,0 +1,44 @@
+.hoteles {
+    background: rgb(226, 106, 44);
+    background: linear-gradient(180deg, rgb(226, 106, 44) 5%, rgb(255, 130, 67) 17%, rgb(253, 166, 93) 30%, rgb(255, 208, 127) 70%, rgb(255, 130, 67) 85%, rgb(226, 106, 44) 95%);
+    color: white;
+    padding: 10vh 0 20vh 0;
+    overflow-x: hidden;
+
+}
+
+.hotel-cards {
+    padding-top: 5vh;
+}
+
+.card {
+    color: black;
+    padding-bottom: 2vh;
+}
+
+
+
+.list-group-item {
+    font-size: 2vh;
+}
+
+.enl-hotel {
+    padding-top: 2vh;
+}
+
+.button-color-h {
+    background: #FF4F00;
+    padding: 0.8vh 4vh;
+    border-radius: 5px;
+    color: white;
+    font-size: 2.5vh;
+    text-decoration: none;
+    font-weight: 500;
+    }
+
+
+ .button-color-h:hover {
+    background: #df4802;
+    color: white;
+    border: 0.5px solid white;
+    }
